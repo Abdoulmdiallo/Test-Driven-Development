@@ -31,7 +31,7 @@ namespace Test_Driven_Development
                             GetProduct(ValidInt());
                             break;
                         case "2":
-                            Console.WriteLine("supplier search not implemented");
+                            GetSupplier(ValidInt());
                             break;
                         default:
                             break;
@@ -63,10 +63,17 @@ namespace Test_Driven_Development
                 {
                     Console.WriteLine(reader.GetString(0));
                 }
+
+                else 
+                {
+
+                    Console.WriteLine("no product found with id 0");
+
+                }
             }
             catch (Exception)
             {
-                Console.WriteLine("");
+                Console.WriteLine("no product found with id 0");
             }
 
         }
